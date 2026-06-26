@@ -1,175 +1,295 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>John Benedict A. Landa | Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of John Benedict A. Landa, a front-end developer building responsive booking systems, portals, tools, and polished web interfaces.">
+  <meta name="theme-color" content="#111a18">
+  <meta property="og:title" content="John Benedict A. Landa | Front-End Portfolio">
+  <meta property="og:description" content="Live web apps and interface work by John Benedict A. Landa.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="dacoville.jpg">
+  <title>John Benedict A. Landa | Front-End Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600..900&family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<nav class="top-nav">
-  <span class="logo">◎</span>
-  <ul>
-    <li>Projects</li>
-    <li>Blog</li>
-    <li>Learn</li>
-    <li>Clone me</li>
-    <li>Find me</li>
-  </ul>
-</nav>
+  <header class="site-header" data-header>
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="John Benedict A. Landa home">
+        <span class="brand-mark">JBL</span>
+        <span class="brand-text">John Landa</span>
+      </a>
 
-<section class="hero">
-  <div class="hero-left">
-    <h1 class="hello">Hello.</h1>
-    <h1 class="name">I’m John.</h1>
-    <p class="subtitle">
-      I’m a BS Information System student passionate about clean UI and web development.
-    </p>
-    <button id="theme-toggle">Switch Theme</button>
-  </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        Menu
+      </button>
 
-  <div class="hero-right">
-    <img src="profilepic.jpg" alt="Profile Picture">
-  </div>
-</section>
+      <ul class="nav-links" id="primary-menu">
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#badges">Badges</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
+      <div class="nav-controls">
+        <a class="nav-action" href="https://www.linkedin.com/in/john-landa-317111251/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="nav-action" href="mailto:jblanda@mcm.edu.ph">Email me</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+          <span class="theme-dot" aria-hidden="true"></span>
+          <span class="theme-label">Dark</span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-<!-- ================= WEBPROGRAMMING EXAM ================= -->
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Front-end systems / UI craft</p>
+        <h1 id="hero-title">Useful web apps with personality.</h1>
+        <p class="hero-lede">
+          I am John Benedict A. Landa, building responsive interfaces for booking flows, portals, tools, and product-style school projects.
+        </p>
 
-<section id="exam">
-  <h2>WEBPROGRAMMING EXAM</h2>
-
-  <div class="project-grid">
-
-    <a href="https://bright-grid-nine.vercel.app/login"
-       target="_blank"
-       class="project-link">
-
-      <div class="project-card retro-window">
-
-        <div class="window-bar">
-          <span class="window-dots">◯ ◯</span>
-          <span class="window-title">webprogramming.exam</span>
+        <div class="hero-actions" aria-label="Primary actions">
+          <a class="button button-primary" href="#projects">See the work</a>
+          <a class="button button-secondary" href="https://github.com/Jeblanda" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-
-        <img src="exam.jpg" class="project-img">
-
-        <div class="project-text">
-          <h4>Web Programming Exam</h4>
-          <p>Login system project created for Web Programming examination.</p>
-        </div>
-
       </div>
 
-    </a>
+      <div class="hero-board" aria-label="Featured project previews">
+        <a class="hero-screen hero-screen-main" href="https://dacoville-pickleball-booking.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <img src="dacoville.jpg" alt="Dacoville Pickleball booking website screenshot">
+          <span>Dacoville Pickleball</span>
+        </a>
 
-  </div>
-</section>
+        <a class="hero-screen hero-screen-side" href="https://rlg-gym.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <img src="rlg-gym.jpg" alt="RLG Gym staff portal screenshot">
+          <span>RLG Gym Portal</span>
+        </a>
 
-
-<!-- ================= FEATURED PROJECTS ================= -->
-
-<section id="projects">
-  <h2>Featured Projects</h2>
-
-  <div class="project-grid">
-
-    <!-- GreenSense -->
-    <a href="https://jeblanda.github.io/LANDA_CASE_STUDY2/" target="_blank" class="project-link greensense">
-      <div class="project-card retro-window">
-        <div class="window-bar">
-          <span class="window-dots">◯ ◯</span>
-          <span class="window-title">greensense.project</span>
-        </div>
-        <img src="greensense.jpg" class="project-img">
-        <div class="project-text">
-          <h4>GreenSense</h4>
-          <p>Smart greenhouse monitoring system designed to help farmers improve efficiency.</p>
+        <div class="hero-card">
+          <img src="profilepic.jpg" alt="Portrait of John Benedict A. Landa">
+          <div>
+            <strong>8 live builds</strong>
+            <small>HTML / CSS / JavaScript / Vercel</small>
+          </div>
         </div>
       </div>
-    </a>
+    </section>
 
-    <!-- JavaScript MPS -->
-    <a href="https://jeblanda.github.io/JavascriptMPs/" target="_blank" class="project-link">
-      <div class="project-card retro-window">
-        <div class="window-bar">
-          <span class="window-dots">◯ ◯</span>
-          <span class="window-title">javascript-mps.project</span>
-        </div>
-        <img src="javascriptmps.jpg" class="project-img">
-        <div class="project-text">
-          <h4>JavaScript MPS</h4>
-          <p>A mini project showcasing JavaScript fundamentals and interaction.</p>
-        </div>
-      </div>
-    </a>
+    <section class="ticker" aria-label="Portfolio highlights">
+      <p>Newest work</p>
+      <ul>
+        <li>Dacoville Pickleball</li>
+        <li>RLG Gym Portal</li>
+        <li>AWS Academy</li>
+        <li>IT Specialist Java</li>
+        <li>GreenSense</li>
+      </ul>
+    </section>
 
-    <!-- Tailwind -->
-    <a href="https://landa-webapp-demo.vercel.app/" target="_blank" class="project-link">
-      <div class="project-card retro-window">
-        <div class="window-bar">
-          <span class="window-dots">◯ ◯</span>
-          <span class="window-title">tailwind-ui.project</span>
-        </div>
-        <img src="tailwindcss.jpg" class="project-img">
-        <div class="project-text">
-          <h4>Tailwind CSS</h4>
-          <p>Responsive UI project built using Tailwind utility classes.</p>
-        </div>
-      </div>
-    </a>
-
-    <!-- Cozy Corner -->
-    <a href="https://thecozycornerbylandajb.vercel.app/" target="_blank" class="project-link">
-      <div class="project-card retro-window">
-        <div class="window-bar">
-          <span class="window-dots">◯ ◯</span>
-          <span class="window-title">cozycorner.project</span>
-        </div>
-        <img src="cozycorner.jpg" class="project-img">
-        <div class="project-text">
-          <h4>Cozy Corner</h4>
-          <p>JavaScript-based project focused on cozy UI and UX.</p>
-        </div>
-      </div>
-    </a>
-
-  </div>
-</section>
-
-
-<!-- ================= NEW PROJECT ================= -->
-
-<section id="currency">
-  <h2>New Project</h2>
-
-  <div class="project-grid">
-    <a href="https://landa-api.vercel.app/"
-       target="_blank"
-       class="project-link">
-
-      <div class="project-card retro-window">
-
-        <div class="window-bar">
-          <span class="window-dots">◯ ◯</span>
-          <span class="window-title">currencyconverter.project</span>
-        </div>
-
-        <img src="currencyconverter.jpg" class="project-img">
-
-        <div class="project-text">
-          <h4>Currency Converter</h4>
-          <p>A web-based currency converter with a clean and user-friendly interface.</p>
-        </div>
-
+    <section class="section selected-work" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Work</p>
+        <h2 id="projects-title">Visual builds. Clear purpose. Live links.</h2>
       </div>
 
-    </a>
-  </div>
-</section>
+      <div class="work-grid">
+        <article class="work-card work-card-wide accent-lime">
+          <a class="work-media" href="https://dacoville-pickleball-booking.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Dacoville Pickleball live project">
+            <img src="dacoville.jpg" alt="Dacoville Pickleball booking website screenshot" loading="lazy">
+          </a>
+          <div class="work-info">
+            <p>Newest build</p>
+            <h3>Dacoville Pickleball</h3>
+            <div class="work-meta">
+              <span>Court booking</span>
+              <a href="https://dacoville-pickleball-booking.vercel.app/" target="_blank" rel="noopener noreferrer">View live</a>
+            </div>
+          </div>
+        </article>
 
+        <article class="work-card work-card-tall accent-red">
+          <a class="work-media" href="https://rlg-gym.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open RLG Gym live project">
+            <img src="rlg-gym.jpg" alt="RLG Gym staff portal screenshot" loading="lazy">
+          </a>
+          <div class="work-info">
+            <p>Operations portal</p>
+            <h3>RLG Gym</h3>
+            <div class="work-meta">
+              <span>Staff sign in</span>
+              <a href="https://rlg-gym.vercel.app/" target="_blank" rel="noopener noreferrer">View live</a>
+            </div>
+          </div>
+        </article>
 
-<script src="script.js"></script>
+        <article class="work-card accent-teal">
+          <a class="work-media" href="https://jeblanda.github.io/LANDA_CASE_STUDY2/" target="_blank" rel="noopener noreferrer" aria-label="Open GreenSense live project">
+            <img src="greensense.jpg" alt="GreenSense landing page screenshot" loading="lazy">
+          </a>
+          <div class="work-info">
+            <p>Greenhouse concept</p>
+            <h3>GreenSense</h3>
+            <div class="work-meta">
+              <span>Responsive UI</span>
+              <a href="https://jeblanda.github.io/LANDA_CASE_STUDY2/" target="_blank" rel="noopener noreferrer">View live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card accent-blue">
+          <a class="work-media" href="https://landa-api.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Currency Converter live project">
+            <img src="currencyconverter.jpg" alt="Currency Converter app screenshot" loading="lazy">
+          </a>
+          <div class="work-info">
+            <p>Utility tool</p>
+            <h3>Currency Converter</h3>
+            <div class="work-meta">
+              <span>API interface</span>
+              <a href="https://landa-api.vercel.app/" target="_blank" rel="noopener noreferrer">View live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card accent-amber">
+          <a class="work-media" href="https://thecozycornerbylandajb.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open The Cozy Corner live project">
+            <img src="cozycorner.jpg" alt="The Cozy Corner bookstore website screenshot" loading="lazy">
+          </a>
+          <div class="work-info">
+            <p>Commerce UI</p>
+            <h3>The Cozy Corner</h3>
+            <div class="work-meta">
+              <span>Bookstore</span>
+              <a href="https://thecozycornerbylandajb.vercel.app/" target="_blank" rel="noopener noreferrer">View live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card accent-violet">
+          <a class="work-media" href="https://landa-webapp-demo.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Tailwind CSS Demo live project">
+            <img src="tailwindcss.jpg" alt="Tailwind CSS demo screenshot" loading="lazy">
+          </a>
+          <div class="work-info">
+            <p>Interface study</p>
+            <h3>Tailwind CSS Demo</h3>
+            <div class="work-meta">
+              <span>Layout system</span>
+              <a href="https://landa-webapp-demo.vercel.app/" target="_blank" rel="noopener noreferrer">View live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card accent-ink">
+          <a class="work-media" href="https://jeblanda.github.io/JavascriptMPs/" target="_blank" rel="noopener noreferrer" aria-label="Open JavaScript MPS live project">
+            <img src="javascriptmps.jpg" alt="JavaScript mini projects screenshot" loading="lazy">
+          </a>
+          <div class="work-info">
+            <p>Interaction lab</p>
+            <h3>JavaScript MPS</h3>
+            <div class="work-meta">
+              <span>DOM practice</span>
+              <a href="https://jeblanda.github.io/JavascriptMPs/" target="_blank" rel="noopener noreferrer">View live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card accent-red">
+          <a class="work-media" href="https://bright-grid-nine.vercel.app/login" target="_blank" rel="noopener noreferrer" aria-label="Open Web Programming Exam live project">
+            <img src="exam.jpg" alt="Web Programming Exam login system screenshot" loading="lazy">
+          </a>
+          <div class="work-info">
+            <p>Auth flow</p>
+            <h3>Web Programming Exam</h3>
+            <div class="work-meta">
+              <span>Login UI</span>
+              <a href="https://bright-grid-nine.vercel.app/login" target="_blank" rel="noopener noreferrer">View live</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="credentials-section" id="badges" aria-labelledby="badges-title">
+      <div class="credentials-heading">
+        <p class="eyebrow">Verified Badges</p>
+        <h2 id="badges-title">Credentials that back the builds.</h2>
+      </div>
+
+      <div class="badge-grid">
+        <article class="badge-card badge-card-aws">
+          <a class="badge-art" href="https://www.credly.com/badges/b40b8acf-901f-45a4-bb48-237f77f6af6d/public_url" target="_blank" rel="noopener noreferrer" aria-label="Verify AWS Academy Graduate Cloud Foundations badge on Credly">
+            <img src="aws-badge.png" alt="AWS Academy Cloud Foundations trained badge" loading="lazy">
+          </a>
+          <div class="badge-copy">
+            <p>Amazon Web Services</p>
+            <h3>AWS Academy Graduate - Cloud Foundations</h3>
+            <span>Cloud foundations / AWS Academy</span>
+            <a href="https://www.credly.com/badges/b40b8acf-901f-45a4-bb48-237f77f6af6d/public_url" target="_blank" rel="noopener noreferrer">Verify badge</a>
+          </div>
+        </article>
+
+        <article class="badge-card badge-card-java">
+          <a class="badge-art" href="https://www.credly.com/badges/8b0443ea-020c-45f1-8aba-8aefd0e48044/public_url" target="_blank" rel="noopener noreferrer" aria-label="Verify IT Specialist Java badge on Credly">
+            <img src="java-badge.png" alt="IT Specialist Java Pearson badge" loading="lazy">
+          </a>
+          <div class="badge-copy">
+            <p>Certiport / Pearson VUE</p>
+            <h3>IT Specialist - Java</h3>
+            <span>Java logic / debugging / programming</span>
+            <a href="https://www.credly.com/badges/8b0443ea-020c-45f1-8aba-8aefd0e48044/public_url" target="_blank" rel="noopener noreferrer">Verify badge</a>
+          </div>
+        </article>
+
+        <article class="linkedin-card">
+          <p class="eyebrow">Profile</p>
+          <h3>Connect with me on LinkedIn.</h3>
+          <a class="button button-primary" href="https://www.linkedin.com/in/john-landa-317111251/" target="_blank" rel="noopener noreferrer">Open LinkedIn</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="stack-section" id="stack" aria-labelledby="stack-title">
+      <div>
+        <p class="eyebrow">Stack</p>
+        <h2 id="stack-title">Design. Build. Ship.</h2>
+      </div>
+
+      <ul class="stack-list" aria-label="Skills and tools">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Tailwind CSS</li>
+        <li>Responsive UI</li>
+        <li>Forms</li>
+        <li>API UI</li>
+        <li>Vercel</li>
+      </ul>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-panel">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Need a site that looks finished?</h2>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:jblanda@mcm.edu.ph">jblanda@mcm.edu.ph</a>
+          <a class="button button-secondary" href="https://github.com/Jeblanda" target="_blank" rel="noopener noreferrer">GitHub profile</a>
+          <a class="button button-secondary" href="https://www.linkedin.com/in/john-landa-317111251/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>John Benedict A. Landa</p>
+    <p>Front-end portfolio / 2026</p>
+  </footer>
 </body>
 </html>
