@@ -65,6 +65,7 @@ function initScrollReveal() {
     ['.section-heading', 0],
     ['.work-card', 85],
     ['.credentials-heading', 0],
+    ['.certificate-card', 75],
     ['.badge-card', 90],
     ['.linkedin-card', 120],
     ['.stack-section > div', 0],
